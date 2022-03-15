@@ -53,6 +53,73 @@ function testStructureDate(date){
           }return false;
       }
 }
+//function pour calculer l'age a partir de la date de naissance :
+function Age(dateN,date){
+    let data=[];
+   let array1 = dateN.split('-');
+    let array2 = date.split('-');
+      for (let i=0;i<3;i++){
+        data.push(parseInt(array2[i])-parseInt(array1[i]));
+      }
+let day = data[0];
+let month = data[1];
+let year = data[2];
+console.log(day,month,year);
+    return prossess(day,month,year);
+}
 
-export{testDate,testStructureDate};
+// function prossess :
+function prossess(day,month,year){
+    if(day<0 &&(month==1 || month==3 ||month==5 || month==7||month==8||month==10||month==12)){
+        day=30+day;
+        month-=1;
+    }
+    if(day<0 &&(month==4||month==6||month==9||month==11)){
+        day=31+day;
+        month-=1;
+    }
+    if(day<0 && month==2 && year%4==0){
+        day=29+day;
+        month-=1;
+    }
+    if(day<0 && month==2 && year%4!=0){
+        day=28+day;
+        month-=1;
+    }
+    if((month==1 || month==3 ||month==5 || month==7||month==8||month==10||month==12)&&day>31){
+        day-=31;
+        month+=1;
+    }
+    if((month==4||month==6||month==9||month==11)&&day>30){
+        day-=30;
+        month=+1;
+    }
+    if(day>29 && month==2 &&year%4==0){
+        day-=29;
+        month+=1;
+    }
+    if(day>28 && month==2 &&year%4!=0){
+        day-=28;
+        month+=1;
+    }
+    if(month>12){
+        month-=12;
+        year+=1;
+    }
+    if(month<=0){
+        month=12+month;
+        year-=1;
+    }
+    if(day>=0 && month>=0 &&year>=0){
+        return [day,month,year];
+    }
+    else{
+        return prossess(day,month,year);
+    }
+
+}
+
+let Day= new Date();
+let  date2 = (Day.getDay()+13).toString().padStart(2,0)+'-'+Day.getMonth().toString().padStart(2,0)+'-'+Day.getFullYear().toString().padStart(4,0);
+export{testDate,testStructureDate,Age,prossess};
   

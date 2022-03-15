@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="javascripte,fullstack,frontend,webapplication,api">
+    <meta name="author" content="Ahmed Ajjalti" >
+    <meta name="description" content="une application qui calcule l'age de l'utilisateur facilement">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/style/style.css">
     <title>howOldImi</title>
 </head>
 <body>
-    <div class="container border border-1 m-auto h-75">
-        <div class="container">
+    <script type="module" src="assets/js/app.js"></script>
+    <img src="images/image.jpeg" alt="background">
+    <div class="container border border-1 m-auto" id="main">
+        <div class="container h-100  p-5">
             <div class="row">
                     <div class="col-12">
                         <input type="date" class="form-cotrol w-100 h-100" id="date">
                     </div>
                     <div class="col-4 mx-auto">
-                        <div class="btn btn-outline-warning w-100" id="button">Calculer</div>
+                        <div class="btn btn-outline-warning w-100 mt-5" id="button">Calculer</div>
                     </div>
             </div>
-            <div class="alert alert-success mt-5 text-center" id="alert">ok</div>
+            <div class="alert alert-success mt-5 text-center visually-hidden" id="alert"></div>
         </div>
     </div>
-    <div class="footer w-auto text-center">&copy; Developed By <a href="" class="mark text-decoration-none text-dark">Ahmed Ajjalti</a></div>
-
-
+    <div class="footer w-auto text-center">&copy; Developed By <a href="https://www.linkedin.com/in/ahmed-ajjalti-01a952205/" class="mark text-decoration-none text-dark">Ahmed Ajjalti</a></div>
     <script type="module" src="assets/js/app.js"></script>
+
+
 </body>
 </html>
