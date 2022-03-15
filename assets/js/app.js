@@ -13,8 +13,10 @@ button.addEventListener('click',function(){
             alert.textContent=`aah je vois vous avez  ${res[2]} années et ${res[1]} mois et presque ${res[0]} jours ;)`;
         }
 })
-let input = document.getElementById("date");
-input.addEventListener('focus',function(){
+function reset(){
+var inp = document.getElementById("date");
+inp.addEventListener('focus',function(){
     alert.classList.add("visually-hidden");
 
 });
+}

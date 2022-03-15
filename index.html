@@ -15,22 +15,21 @@
 <body>
     <script type="module" src="assets/js/app.js"></script>
     <img src="images/image.jpeg" alt="background">
-    <div class="container border border-1 m-auto" id="main">
+    <div class="container border border-1 m-auto my-auto" id="main">
         <div class="container h-100  p-5">
+            <div class="h5 text-center w-50 mx-auto mark">Entrer votre date de naissance pour avoir votre age</div>
             <div class="row">
                     <div class="col-12">
-                        <input type="date" class="form-cotrol w-100 h-100" id="date">
+                        <input type="date" class="form-cotrol w-100 h-100" id="date" onfocus="reset()">
                     </div>
                     <div class="col-4 mx-auto">
-                        <div class="btn btn-outline-warning w-100 mt-5" id="button">Calculer</div>
+                        <div class="btn btn-outline-warning w-100 mt-5" id="button" >Calculer</div>
                     </div>
             </div>
             <div class="alert alert-success mt-5 text-center visually-hidden" id="alert"></div>
         </div>
     </div>
     <div class="footer w-auto text-center">&copy; Developed By <a href="https://www.linkedin.com/in/ahmed-ajjalti-01a952205/" class="mark text-decoration-none text-dark">Ahmed Ajjalti</a></div>
-    <script type="module" src="assets/js/app.js"></script>
-
 
 </body>
 </html>
