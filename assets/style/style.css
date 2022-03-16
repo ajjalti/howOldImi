@@ -29,3 +29,10 @@ body div:nth-child(3){
     width: 100%!important;
     text-align: center;
 }
+@media screen and (max-width:420px) {
+    #button{
+        font-size: 10pt!important;
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+}
