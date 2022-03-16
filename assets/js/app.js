@@ -10,13 +10,13 @@ button.addEventListener('click',function(){
             let res = Age(age,day);
             let alert = document.getElementById('alert');
             alert.classList.remove('visually-hidden');
-            alert.textContent=`aah je vois vous avez  ${res[2]} années et ${res[1]} mois et presque ${res[0]} jours ;)`;
+            alert.innerHTML=`aah je vois vous avez  <h4 class="text-danger d-inline">${res[2]}</h4> années et <h4 class="text-danger d-inline">${res[1]}</h4> mois et presque <h4 class="text-danger d-inline">${res[0]}</h4> jours ;)`;
         }
 })
-function reset(){
-var inp = document.getElementById("date");
+// reset  -  event:
+let alert = document.getElementById('alert');
+let inp = document.getElementById('date');
 inp.addEventListener('focus',function(){
-    alert.classList.add("visually-hidden");
+    alert.classList.add("visually-hidden");  
+})
 
-});
-}

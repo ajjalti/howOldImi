@@ -23,3 +23,9 @@ body div:nth-child(3){
     height:60vh;
     background-color:rgba(240, 248, 250, 0.6);
 }
+#footer{
+    position: absolute;
+    bottom: 5vh;
+    width: 100%!important;
+    text-align: center;
+}

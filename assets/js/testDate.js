@@ -61,10 +61,9 @@ function Age(dateN,date){
       for (let i=0;i<3;i++){
         data.push(parseInt(array2[i])-parseInt(array1[i]));
       }
-let day = data[0];
-let month = data[1];
-let year = data[2];
-console.log(day,month,year);
+    let day = data[0];
+    let month = data[1];
+    let year = data[2];
     return prossess(day,month,year);
 }
 
@@ -118,8 +117,5 @@ function prossess(day,month,year){
     }
 
 }
-
-let Day= new Date();
-let  date2 = (Day.getDay()+13).toString().padStart(2,0)+'-'+Day.getMonth().toString().padStart(2,0)+'-'+Day.getFullYear().toString().padStart(4,0);
 export{testDate,testStructureDate,Age,prossess};
   
