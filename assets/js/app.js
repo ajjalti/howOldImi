@@ -5,12 +5,12 @@ button.addEventListener('click',function(){
         var age = date.split('-').reverse().join('-');
         if(testStructureDate(age)){
             let day= new Date();
-            day = (day.getDay()+13).toString().padStart(2,0)+'-'+day.getMonth().toString().padStart(2,0)+'-'+day.getFullYear().toString().padStart(4,0);
+            day = (day.getDay()+13).toString().padStart(2,0)+'-'+(day.getMonth()+1).toString().padStart(2,0)+'-'+day.getFullYear().toString().padStart(4,0);
             // partie du calcul de l'age :
             let res = Age(age,day);
             let alert = document.getElementById('alert');
             alert.classList.remove('visually-hidden');
-            alert.innerHTML=`aah je vois vous avez  <h4 class="text-danger d-inline">${res[2]}</h4> années et <h4 class="text-danger d-inline">${res[1]+1}</h4> mois et presque <h4 class="text-danger d-inline">${res[0]}</h4> jours ;)`;
+            alert.innerHTML=`aah je vois vous avez  <h4 class="text-danger d-inline">${res[2]}</h4> années et <h4 class="text-danger d-inline">${res[1]}</h4> mois et presque <h4 class="text-danger d-inline">${res[0]}</h4> jours ;)`;
         }
 })
 // reset  -  event:
