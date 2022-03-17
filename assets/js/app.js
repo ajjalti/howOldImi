@@ -10,7 +10,7 @@ button.addEventListener('click',function(){
             let res = Age(age,day);
             let alert = document.getElementById('alert');
             alert.classList.remove('visually-hidden');
-            alert.innerHTML=`aah je vois vous avez  <h4 class="text-danger d-inline">${res[2]}</h4> années et <h4 class="text-danger d-inline">${res[1]}</h4> mois et presque <h4 class="text-danger d-inline">${res[0]}</h4> jours ;)`;
+            alert.innerHTML=`aah je vois vous avez  <h4 class="text-danger d-inline">${res[2]}</h4> années et <h4 class="text-danger d-inline">${res[1]+1}</h4> mois et presque <h4 class="text-danger d-inline">${res[0]}</h4> jours ;)`;
         }
 })
 // reset  -  event:
